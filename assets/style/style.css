@@ -1,0 +1,42 @@
+:root{
+    --white: #ffffff;
+    --body:#808080;
+    --dark: #181818;
+
+}
+
+body{
+    font-family: 'barlow', sans-serif ;
+    line-height: 1.8;
+    color:var(--body);
+    height: 2000px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+    
+}
+a{
+    font-weight: 700;
+    transition: all 0.4 ease;
+    color:var(--body);
+}
+a:hover{
+    font-weight: 900;
+    color:var(--dark);
+}
+.navbar{
+    position: absolute;
+    width: 100%;;
+}
+section{
+    padding-top: 100px;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#hero{
+    background-image: url('../img/cover_1.jpg');
+}
+#hero>image{
+    width: 100%;
+}
