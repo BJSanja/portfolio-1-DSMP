@@ -10,6 +10,7 @@ body{
     line-height: 1.8;
     color:var(--body);
     height: 2000px;
+    
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 800;
@@ -21,22 +22,92 @@ a{
     color:var(--body);
 }
 a:hover{
-    font-weight: 900;
+    font-weight: 700;
     color:var(--dark);
 }
 .navbar{
     position: absolute;
-    width: 100%;;
+    z-index: 999;
+    width: 100%;
+    padding-top: 16px;
+}
+.navbar .navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar-brand{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.social-links a{
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 7px;
 }
 section{
-    padding-top: 100px;
+    padding-top: 150px;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
 }
+@media (max-width:991px){
+    .navbar{ background-color:var(--dark);
+    }
+}
 #hero{
     background-image: url('../img/cover_1.jpg');
+}
+#hero h1, p{
+    color: var(--white);
+    
+}
+#hero h1{
+    font-size: 70px;
+    font-weight: 800;
+    max-width: 500px;
+    text-transform: uppercase;
 }
 #hero>image{
     width: 100%;
 }
+#hero button{
+    padding: 15px 30px;
+    border-width: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    animation: animate 2s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animate {
+    25% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    75% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
